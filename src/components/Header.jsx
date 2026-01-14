@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import Logo from "../assets/daraz-logo.png"
 function Header() {
   let [open, setOpen] = useState(false);
   let [showLogin, setShowLogin] = useState(false);
@@ -33,7 +33,7 @@ function Header() {
   py-2 md:py-3 border-b border-orange-400 bg-[#F85606]">
 
   <div className="flex-shrink-0">
-    <img src="/src/assets/daraz-logo.png" alt="Daraz" className="w-20 sm:w-24 md:w-28 lg:w-32 cursor-pointer"/>
+    <img src={Logo}alt="Daraz" className="w-20 sm:w-24 md:w-28 lg:w-32 cursor-pointer"/>
   </div>
 
   <div className="flex flex-1 items-center min-w-0">
